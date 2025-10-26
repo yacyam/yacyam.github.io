@@ -1,44 +1,63 @@
-/* === Typography === */
+/* === Layout Refinement for Single-Column Wide Design === */
 body {
   font-family: 'Merriweather', serif;
   color: #222;
   background-color: #fffaf5; /* soft white-beige */
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Inter', sans-serif;
-  color: #2c2c2c;
+.container {
+  max-width: 950px; /* wider column */
+  margin: 60px auto;
+  padding: 40px 40px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  border-radius: 8px;
 }
 
-a {
-  color: #b5895a; /* warm beige-gold accent */
-  text-decoration: none;
+header {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-a:hover {
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #b5895a;
+  margin: 0 8px;
+  font-weight: 500;
+}
+
+nav a:hover {
   color: #8a6b3d;
   text-decoration: underline;
 }
 
-/* === Layout === */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border-radius: 8px;
-}
-
-header, footer {
-  text-align: center;
-  margin-bottom: 40px;
+main {
+  font-size: 1.05rem;
 }
 
 footer {
+  text-align: center;
+  margin-top: 60px;
   font-size: 0.9em;
   color: #777;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.post {
+  margin-bottom: 60px;
+}
+
+.post-content p {
+  margin-bottom: 1em;
 }

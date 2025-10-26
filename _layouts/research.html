@@ -1,0 +1,11 @@
+---
+---
+{% include head.html %}
+<div class="research">
+  <h2>{{ page.title }}</h2>
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width:100%; border-radius:8px;">
+  {% endif %}
+  <p>{{ content }}</p>
+</div>
+{% include footer.html %}
