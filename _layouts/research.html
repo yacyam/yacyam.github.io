@@ -1,11 +1,13 @@
 ---
+layout: default
 ---
-{% include head.html %}
 <div class="research">
   <h2>{{ page.title }}</h2>
   {% if page.image %}
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width:100%; border-radius:8px;">
   {% endif %}
+  {% if page.embed %}
+    <embed src="{{ page.embed | relative_url }}" type="application/pdf" width="100%" height="600px" title="Embedded PDF Viewer" />
+  {% endif %}
   <p>{{ content }}</p>
 </div>
-{% include footer.html %}
