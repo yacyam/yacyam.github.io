@@ -15,7 +15,7 @@ title: Home
     <p>This site contains my research artifacts. <!-- and occasional blog posts. --></p>
     
     <ul>
-      <li><strong>Research Interests:</strong> See <a href="/research/">Research</a></li>
+      <li><strong>Research Projects:</strong> See <a href="/research/">Research</a></li>
       <!-- <li><strong>Recent Blog:</strong> See <a href="/blog/">Blog</a></li> -->
     </ul>
   </div>
